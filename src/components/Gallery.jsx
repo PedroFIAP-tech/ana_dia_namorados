@@ -5,24 +5,26 @@ import { Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
+const base = import.meta.env.BASE_URL
+
 const fotos = [
-  { src: '/fotos/foto1.jpeg',  legenda: 'você é incrível' },
-  { src: '/fotos/fotos.jpeg',  legenda: 'essa foto é especial' },
-  { src: '/fotos/foto3.jpeg',  legenda: 'te amo assim' },
-  { src: '/fotos/foto4.jpeg',  legenda: 'momento perfeito' },
-  { src: '/fotos/foto5.jpeg',  legenda: 'tão linda' },
-  { src: '/fotos/foto6.jpeg',  legenda: 'aventuras com você' },
-  { src: '/fotos/foto7.jpeg',  legenda: 'minha favorita' },
-  { src: '/fotos/foto8.jpeg',  legenda: 'cada detalhe' },
-  { src: '/fotos/foto9.jpeg',  legenda: 'sorriso que me conquista' },
-  { src: '/fotos/foto10.jpeg', legenda: 'dias inesquecíveis' },
-  { src: '/fotos/foto11.jpeg', legenda: 'juntos é melhor' },
-  { src: '/fotos/foto12.jpeg', legenda: 'olha esse sorriso' },
-  { src: '/fotos/foto13.jpeg', legenda: 'você ilumina tudo' },
-  { src: '/fotos/foto14.jpeg', legenda: 'memória que guardo' },
-  { src: '/fotos/foto15.jpeg', legenda: 'pra sempre' },
-  { src: '/fotos/foto16.jpeg', legenda: 'do começo ao fim' },
-  { src: '/fotos/foto17.jpeg', legenda: 'onde tudo começou' },
+  { src: `${base}fotos/foto1.jpeg`,  legenda: 'você é incrível' },
+  { src: `${base}fotos/fotos.jpeg`,  legenda: 'essa foto é especial' },
+  { src: `${base}fotos/foto3.jpeg`,  legenda: 'te amo assim' },
+  { src: `${base}fotos/foto4.jpeg`,  legenda: 'momento perfeito' },
+  { src: `${base}fotos/foto5.jpeg`,  legenda: 'tão linda' },
+  { src: `${base}fotos/foto6.jpeg`,  legenda: 'aventuras com você' },
+  { src: `${base}fotos/foto7.jpeg`,  legenda: 'minha favorita' },
+  { src: `${base}fotos/foto8.jpeg`,  legenda: 'cada detalhe' },
+  { src: `${base}fotos/foto9.jpeg`,  legenda: 'sorriso que me conquista' },
+  { src: `${base}fotos/foto10.jpeg`, legenda: 'dias inesquecíveis' },
+  { src: `${base}fotos/foto11.jpeg`, legenda: 'juntos é melhor' },
+  { src: `${base}fotos/foto12.jpeg`, legenda: 'olha esse sorriso' },
+  { src: `${base}fotos/foto13.jpeg`, legenda: 'você ilumina tudo' },
+  { src: `${base}fotos/foto14.jpeg`, legenda: 'memória que guardo' },
+  { src: `${base}fotos/foto15.jpeg`, legenda: 'pra sempre' },
+  { src: `${base}fotos/foto16.jpeg`, legenda: 'do começo ao fim' },
+  { src: `${base}fotos/foto17.jpeg`, legenda: 'onde tudo começou' },
 ]
 
 const variants = {

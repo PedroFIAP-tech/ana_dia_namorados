@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+const base = import.meta.env.BASE_URL
+
 const marcos = [
-  { data: 'primeiro encontro',          desc: 'o início de tudo',          foto: '/fotos/foto7.jpeg' },
-  { data: 'nosso segundo melhor encontro',             desc: 'muito tenso pra saber se vc ia gostar',             foto: '/fotos/foto16.jpeg' },
-  { data: 'primeira viagem',            desc: 'melhor aventura',           foto: '/fotos/foto11.jpeg'  },
-  { data: 'primeiro natal',             desc: 'família completa',          foto: '/fotos/foto12.jpeg' },
-  { data: 'Melhor jantar do ano', desc: 'eternizado aqui',           foto: '/fotos/foto3.jpeg'  },
-  { data: 'hoje',                       desc: 'e tudo que ainda vem',      foto: '/fotos/foto15.jpeg'  },
+  { data: 'primeiro encontro',             desc: 'o início de tudo',                      foto: `${base}fotos/foto7.jpeg`  },
+  { data: 'nosso segundo melhor encontro', desc: 'muito tenso pra saber se vc ia gostar', foto: `${base}fotos/foto16.jpeg` },
+  { data: 'primeira viagem',               desc: 'melhor aventura',                        foto: `${base}fotos/foto11.jpeg` },
+  { data: 'primeiro natal',                desc: 'família completa',                       foto: `${base}fotos/foto12.jpeg` },
+  { data: 'Melhor jantar do ano',          desc: 'eternizado aqui',                        foto: `${base}fotos/foto3.jpeg`  },
+  { data: 'hoje',                          desc: 'e tudo que ainda vem',                   foto: `${base}fotos/foto15.jpeg` },
 ]
 
 function TimelineItem({ marco, index }) {
