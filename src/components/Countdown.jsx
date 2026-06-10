@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useCountdown } from '../hooks/useCountdown'
@@ -28,8 +29,12 @@ function Unit({ value, label, delay }) {
   )
 }
 
-export default function Countdown() {
-  const { dias, horas, minutos, segundos } = useCountdown('2026-06-12T00:00:00')
+export default function Countdown({ onFim }) {
+  const { dias, horas, minutos, segundos, isFinished } = useCountdown('2026-06-12T00:00:00')
+
+  useEffect(() => {
+    if (isFinished && onFim) onFim()
+  }, [isFinished])
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true })
 
   return (
